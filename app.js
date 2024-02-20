@@ -19,15 +19,12 @@ connection.connect((err) => {
     }
     console.log('success');
   });
+*/
 
 app.get('/', (req, res) => {
     res.render('top.ejs');
-}
-);
-*/
+});
 
-
-console.log("Heloo World");
 
 let port = process.env.PORT;
 if (port == null || port == "") {
