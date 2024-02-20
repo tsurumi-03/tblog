@@ -29,4 +29,8 @@ app.get('/', (req, res) => {
 
 console.log("Heloo World");
 
-app.listen(proess.env.PORT || 3000);
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
